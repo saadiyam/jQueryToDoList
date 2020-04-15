@@ -1,0 +1,147 @@
+body {
+  background-color: #2e86ab;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  margin: 40px auto;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  border: solid 1px #ccc;
+}
+
+.container:after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+.fixedContainer {
+  height: 400px;
+  overflow: auto;
+}
+
+#droppable {
+  background: #222;
+  border: solid 2px #000;
+  height: 300px;
+  width: 400px;
+  line-height: 300px;
+  text-align: center;
+  color: white;
+  margin: 40px auto;
+}
+
+ul {
+  width: 48%;
+  float: left;
+  margin: 0;
+  padding: 0 1%;
+  list-style: none;
+}
+
+ul li:hover {
+  background: #ddd;
+  border-color: #aaa;
+  cursor: pointer;
+}
+
+ul li:active {
+  transform: rotate(2deg);
+  background: #ccc;
+  border-color: #999;
+  box-shadow: 0 10px -4px #111;
+}
+
+.placeholderBox {
+  background: #fc3;
+  height: 20px;
+  border: dashed 2px #777;
+}
+
+#todoListWrapper {
+  width: 80%;
+  text-align: center;
+}
+
+#todoList:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+#todoList ul {
+  width: 14.28%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+#todoList li {
+  background: none;
+  padding: 5px;
+  border: solid 0.5px #ccc;
+  margin: 0;
+  text-align: left;
+  font-size: 12px;
+}
+
+#todoList li:hover {
+  background: #eee;
+}
+
+#todoList li.listTitle {
+  background: #335c81;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-right: solid 1px white;
+  font-size: 14px;
+}
+
+#todoList li.listTitle:hover,
+#todoList li.listTitle:active {
+  cursor: default;
+  transform: none;
+}
+
+#todoList .emptySpace {
+  background: #fc3;
+  border: dashed 1px #777;
+  height: 10px;
+}
+
+#todoList li.addItem {
+  display: none;
+  position: absolute;
+  top: 0;
+  background: none;
+}
+
+#todoList ul:hover li.addItem {
+  display: block;
+}
+
+#todoList li.addItem input {
+  width: 90%;
+  margin: 1px;
+  padding: 4px;
+}
+
+#todoList li.addItem:active {
+  transform: none;
+}
+
+#trash {
+  background: #c92828;
+  color: white;
+  height: 200px;
+  width: 400px;
+  margin: 50px auto 0;
+  line-height: 200px;
+  text-align: center;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery To Do List</title>
+
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- jQuery UI CSS -->
+    <link href="js/jquery-ui-1.11.4/jquery-ui.min.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container" id="todoListWrapper">
+      <h1>To Do List</h1>
+
+      <div id="todoList">
+        <ul>
+          <li class="listTitle">Sunday</li>
+          <li class="addItem">
+            <input type="text" placeholder="Add new item" />
+          </li>
+        </ul>
+        <ul>
+          <li class="listTitle">Monday</li>
+          <li class="addItem">
+            <input type="text" placeholder="Add new item" />
+          </li>
+        </ul>
+        <ul>
+          <li class="listTitle">Tuesday</li>
+          <li class="addItem">
+            <input type="text" placeholder="Add new item" />
+          </li>
+        </ul>
+        <ul>
+          <li class="listTitle">Wednesday</li>
+          <li class="addItem">
+            <input type="text" placeholder="Add new item" />
+          </li>
+        </ul>
+        <ul>
+          <li class="listTitle">Thursday</li>
+          <li class="addItem">
+            <input type="text" placeholder="Add new item" />
+          </li>
+        </ul>
+        <ul>
+          <li class="listTitle">Friday</li>
+          <li class="addItem">
+            <input type="text" placeholder="Add new item" />
+          </li>
+        </ul>
+        <ul>
+          <li class="listTitle">Saturday</li>
+          <li class="addItem">
+            <input type="text" placeholder="Add new item" />
+          </li>
+        </ul>
+      </div>
+      <!-- #todoList -->
+    </div>
+    <!-- .container -->
+
+    <div id="trash">drop here to delete an item</div>
+
+    <!-- Load the CDN first -->
+    <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- If CDN fails to load, serve up the local version -->
+    <script>
+      window.jQuery ||
+        document.write('<script src="js/jquery-2.1.4.js"><\/script>');
+    </script>
+
+    <!-- jQuery UI -->
+    <script src="js/jquery-ui-1.11.4/jquery-ui.min.js"></script>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
